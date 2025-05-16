@@ -36,7 +36,7 @@ function App() {
     <BrowserRouter>
       <header>
         <div className="logo-bar">
-          <div className="logo">📦 MinuteMart Store</div>
+          <div className="logo">📦 Minute Store</div>
           <ToastContainer
     position="top-center"
     autoClose={1500}
