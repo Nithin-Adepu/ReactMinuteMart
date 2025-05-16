@@ -34,11 +34,12 @@
 
 .login-box input {
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #090909;
   border-radius: 8px;
-  background-color: #fafafa;
+  background-color: #fcfbfb;
   font-size: 14px;
   transition: border 0.2s ease;
+  color: #0e0e0e;
 }
 
 .login-box input:focus {
@@ -59,7 +60,7 @@
 }
 
 .login-box button:hover {
-  background-color: #155cbd;
+  background-color: #3d5a82;
 }
 
 .login-box .error {
