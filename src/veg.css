@@ -1,0 +1,142 @@
+/* veg.css */
+
+.veg-page {
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfdfd;
+}
+
+.section-title {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+  background: #fdfdfd;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #c5e1a5;
+}
+
+.price-slider label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #33691e;
+}
+
+.price-slider input[type="range"] {
+  width: 10%;
+  accent-color: #091980;
+  margin-top: 5px;
+}
+
+.range-checkboxes h4 {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #558b2f;
+}
+
+.price-option {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.price-option input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.clear-button {
+  background-color: #d32f2f;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.clear-button:hover {
+  background-color: #b71c1c;
+}
+
+.veg-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.veg-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.veg-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.veg-price {
+  color: #2e7d32;
+  font-weight: 500;
+  margin: 8px 0;
+}
+
+.add-to-cart-btn {
+  background-color: #43a047;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #388e3c;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.pagination button {
+  background-color: #aed581;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #689f38;
+  color: white;
+}
+
+.pagination button:disabled {
+  background-color: #c5e1a5;
+  cursor: not-allowed;
+}

@@ -1,0 +1,107 @@
+/* General Container Styling */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align to left */
+  justify-content: flex-start;
+  background-color: #f7f9fc; /* Light background color */
+  min-height: 100vh;
+  padding: 30px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title and Subtitle Styling */
+.home-title {
+  font-size: 36px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.home-subtitle {
+  font-size: 18px;
+  color: #7f8c8d;
+  font-weight: 300;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+/* Menu List Styling */
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between menu items */
+  width: 100%;
+  max-width: 280px; /* Limit menu width */
+}
+
+.menu-list li {
+  width: 100%;
+}
+
+/* Individual Link Styling */
+.nav-link {
+  text-decoration: none;
+  font-size: 18px;
+  color: #2c3e50; /* Dark text color */
+  font-weight: 600;
+  padding: 14px 24px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  background-color: #ffffff; /* White background */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border: 1px solid #dfe6e9; /* Light border to give it structure */
+}
+
+.nav-link:hover {
+  background-color: #2980b9; /* Dark blue background on hover */
+  color: #ffffff; /* White text on hover */
+  transform: translateX(5px); /* Slight horizontal movement */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.nav-link:active {
+  transform: translateX(2px); /* Slight movement when clicked */
+}
+
+/* Cart Link Styling */
+.cart-link {
+  background-color: #27ae60; /* Green background for cart */
+  color: #ffffff;
+  font-weight: 700;
+  border: none; /* No border */
+}
+
+.cart-link:hover {
+  background-color: #2ecc71; /* Brighter green on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 30px; /* Smaller title font on mobile */
+  }
+
+  .home-subtitle {
+    font-size: 16px; /* Smaller subtitle font */
+  }
+
+  /* Adjust Menu List on Small Screens */
+  .menu-list {
+    gap: 16px; /* Reduced gap for smaller screens */
+    max-width: 260px; /* Slightly reduce the width on smaller devices */
+  }
+
+  .nav-link {
+    font-size: 16px; /* Smaller font size for links */
+    padding: 12px 18px; /* Adjust padding for smaller devices */
+  }
+}
